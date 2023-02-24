@@ -1,6 +1,12 @@
 pipeline {
     agent none
     stages {
+        stage('Hook') {
+            agent any
+            steps {
+                echo 'hook'
+            }
+        }
         stage('Build') {
             agent {
                 docker {
