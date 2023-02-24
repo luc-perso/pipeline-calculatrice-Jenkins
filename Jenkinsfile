@@ -4,7 +4,7 @@ pipeline {
         stage('Hook') {
             agent any
             steps {
-                echo 'hook'
+                echo 'hook with push'
             }
         }
         stage('Build') {
