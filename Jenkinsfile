@@ -1,6 +1,12 @@
 pipeline {
     agent none
     stages {
+        stage('Branch') {
+            agent none
+            steps {
+                echo "multibranch"
+            }
+        }
         stage('Build') {
             agent {
                 docker {
