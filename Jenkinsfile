@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('Branch') {
-            agent none
+            agent any
             steps {
                 echo "multibranch"
             }
